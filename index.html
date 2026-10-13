@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GastroKit - Aplicaciones de Hostelería (Recetas & TPV+)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+    <!-- Header / Navbar -->
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <span class="text-2xl font-bold bg-gradient-to-r from-orange-600 to-blue-600 bg-clip-text text-transparent">GastroKit</span>
+            </div>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
+                <a href="#apps" class="hover:text-orange-600 transition">Aplicaciones</a>
+                <a href="#bundle" class="hover:text-orange-600 transition">Pack Especial</a>
+                <a href="#capturas" class="hover:text-orange-600 transition">Capturas</a>
+                <a href="#privacidad" class="hover:text-orange-600 transition">Política de Privacidad</a>
+            </nav>
+            <div>
+                <a href="#apps" class="bg-orange-600 hover:bg-orange-700 text-white px-5 py-2.5 rounded-xl text-sm font-semibold shadow-sm transition">Ver en App Store</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="py-20 bg-gradient-to-b from-white to-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <span class="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-full text-xs font-semibold bg-orange-100 text-orange-800 mb-6">
+                <i class="fa-solid fa-apple"></i> Disponibles para Mac, iPad e iPhone
+            </span>
+            <h1 class="text-4xl sm:text-6xl font-extrabold text-slate-900 tracking-tight mb-6">
+                Control total para tu negocio de hostelería
+            </h1>
+            <p class="text-lg sm:text-xl text-slate-600 max-w-2xl mx-auto mb-10">
+                Herramientas profesionales de escandallos, costes, alérgenos y TPV diseñadas para funcionar de forma local, rápida y sin cuotas mensuales.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#apps" class="bg-slate-900 hover:bg-slate-800 text-white font-medium px-8 py-4 rounded-2xl shadow-lg transition flex items-center gap-3">
+                    <i class="fa-solid fa-store text-xl"></i> Descubrir Aplicaciones
+                </a>
+                <a href="#privacidad" class="bg-white border border-slate-300 hover:bg-slate-50 text-slate-700 font-medium px-8 py-4 rounded-2xl transition">
+                    Política de Privacidad
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Apps Section -->
+    <section id="apps" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold text-slate-900">Nuestras Aplicaciones</h2>
+            <p class="text-slate-600 mt-2">Diseñadas específicamente para el sector de la hostelería</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-10">
+            <!-- Recetas App -->
+            <div class="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center gap-4 mb-6">
+                        <img src="Logo.jpg" alt="Logo Recetas" class="w-16 h-16 rounded-2xl object-cover shadow-md bg-slate-100">
+                        <div>
+                            <h3 class="text-2xl font-bold text-slate-900">Recetas</h3>
+                            <span class="text-sm font-semibold text-orange-600">Gestión Gastronómica y Costes</span>
+                        </div>
+                    </div>
+                    <p class="text-slate-600 mb-6">
+                        Crea recetas profesionales añadiendo ingredientes con control de alérgenos, costes y mermas. Permite realizar un escalado flexible por kilos, por persona (con gramos exactos) o seleccionando el ingrediente que menos tenga para que los demás se adapten automáticamente.
+                    </p>
+                    <ul class="space-y-3 text-sm text-slate-700 mb-8">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-orange-600"></i> Control detallado de alérgenos, costes y mermas</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-orange-600"></i> Escalado por kilos o por raciones (gramos por persona)</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-orange-600"></i> Escalado por ingrediente limitante (adaptación automática)</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-orange-600"></i> Importación directa de ingredientes con TPV+</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-orange-600"></i> Copias de seguridad y datos 100% locales</li>
+                    </ul>
+                </div>
+                <div class="pt-6 border-t border-slate-100 flex items-center justify-between">
+                    <div>
+                        <span class="text-xs text-slate-400 block">Precio Lanzamiento</span>
+                        <span class="text-2xl font-bold text-slate-900">9,99 €</span>
+                    </div>
+                    <a href="#" class="bg-orange-600 hover:bg-orange-700 text-white px-6 py-3 rounded-xl font-medium text-sm transition flex items-center gap-2">
+                        <i class="fa-brands fa-app-store"></i> App Store
+                    </a>
+                </div>
+            </div>
+
+            <!-- TPV+ App -->
+            <div class="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center gap-4 mb-6">
+                        <img src="Logo%20TPV.jpg" alt="Logo TPV+" class="w-16 h-16 rounded-2xl object-cover shadow-md bg-slate-100">
+                        <div>
+                            <h3 class="text-2xl font-bold text-slate-900">TPV+</h3>
+                            <span class="text-sm font-semibold text-blue-600">Terminal Punto de Venta</span>
+                        </div>
+                    </div>
+                    <p class="text-slate-600 mb-6">
+                        Ideal para locales de hostelería (churrerías, pollerías, cafeterías). Permite vender, cobrar, controlar stock en tiempo real y realizar el cierre de caja diario de forma rápida y sencilla.
+                    </p>
+                    <ul class="space-y-3 text-sm text-slate-700 mb-8">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-600"></i> Control de stock y alertas de mínimo</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-600"></i> Cierre de caja diario y control de efectivo/tarjeta</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-600"></i> Módulo integrado de recetas y escandallos</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-600"></i> Universal: Mac, iPad e iPhone</li>
+                    </ul>
+                </div>
+                <div class="pt-6 border-t border-slate-100 flex items-center justify-between">
+                    <div>
+                        <span class="text-xs text-slate-400 block">Precio Lanzamiento</span>
+                        <span class="text-2xl font-bold text-slate-900">29,99 €</span>
+                    </div>
+                    <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-xl font-medium text-sm transition flex items-center gap-2">
+                        <i class="fa-brands fa-app-store"></i> App Store
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bundle Banner -->
+    <section id="bundle" class="py-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-gradient-to-r from-orange-600 to-blue-600 rounded-3xl p-8 sm:p-12 text-white shadow-xl flex flex-col md:flex-row items-center justify-between gap-8">
+            <div>
+                <span class="bg-white/20 text-white text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">Pack Ahorro Hostelería</span>
+                <h3 class="text-3xl font-bold mt-3">Llévate Recetas y TPV+ juntas</h3>
+                <p class="text-white/90 mt-2 max-w-xl">Combina ambas aplicaciones mediante el App Bundle oficial en la App Store y gestiona tu negocio al completo ahorrando en el pack conjunto.</p>
+            </div>
+            <div class="text-center md:text-right flex-shrink-0">
+                <span class="text-sm text-white/80 block line-through">39,98 €</span>
+                <span class="text-4xl font-extrabold block mb-4">34,99 €</span>
+                <a href="#" class="bg-white text-slate-900 hover:bg-slate-100 px-8 py-3.5 rounded-xl font-bold text-sm shadow-md transition inline-block">Comprar Bundle en App Store</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Capturas de Pantalla -->
+    <section id="capturas" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold text-slate-900">Galería de Pantallas</h2>
+            <p class="text-slate-600 mt-2">Interfaz nativa optimizada para macOS, iPadOS e iOS</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200">
+                <img src="TPV.png" alt="TPV Principal" class="w-full h-56 object-cover bg-slate-100">
+                <div class="p-6">
+                    <h4 class="font-bold text-slate-900 mb-1">Terminal de Ventas</h4>
+                    <p class="text-sm text-slate-600">Cobros rápidos, tickets y gestión visual por categorías.</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200">
+                <img src="Recetas.png" alt="Recetas" class="w-full h-56 object-cover bg-slate-100">
+                <div class="p-6">
+                    <h4 class="font-bold text-slate-900 mb-1">Gestión de Recetas</h4>
+                    <p class="text-sm text-slate-600">Cálculo preciso de costes, márgenes y alérgenos.</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200">
+                <img src="Dashboard.png" alt="Dashboard" class="w-full h-56 object-cover bg-slate-100">
+                <div class="p-6">
+                    <h4 class="font-bold text-slate-900 mb-1">Dashboard y Cierres</h4>
+                    <p class="text-sm text-slate-600">Resumen diario de ventas, formas de pago y control de stock.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Política de Privacidad -->
+    <section id="privacidad" class="py-20 bg-white border-t border-slate-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-slate-900">Política de Privacidad</h2>
+                <p class="text-slate-500 mt-2">Última actualización: Octubre de
