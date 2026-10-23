@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sabor y Control - Aplicaciones de Hostelería (Recetas & TPV+)</title>
+    <title>Recetas - Escandallos, Costes y Escalado para Hostelería</title>
+    <!-- Metadatos SEO / App Store Keyword base -->
+    <meta name="keywords" content="escandallo,recetas,costes,raciones,hostelería,cocina,margen,mermas,alérgenos,cocinero,restaurante,PDF">
+    <meta name="description" content="Pon tus recetas y adáptalas a cada situación: para 10 raciones, para 5 kg o con lo que tienes en stock. Con coste, margen y lista de la compra al instante.">
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -13,106 +17,198 @@
     <header class="bg-white border-b border-slate-200 sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             <div class="flex items-center space-x-3">
-                <span class="text-2xl font-bold bg-gradient-to-r from-orange-600 to-blue-600 bg-clip-text text-transparent">Sabor y Control</span>
+                <img src="Logo.jpg" alt="Logo Recetas" class="w-10 h-10 rounded-xl object-cover shadow-sm">
+                <span class="text-2xl font-bold bg-gradient-to-r from-orange-600 to-amber-600 bg-clip-text text-transparent">Recetas</span>
             </div>
             <nav class="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
-                <a href="#apps" class="hover:text-orange-600 transition">Aplicaciones</a>
-                <a href="#bundle" class="hover:text-orange-600 transition">Pack Especial</a>
-                <a href="#capturas" class="hover:text-orange-600 transition">Capturas</a>
+                <a href="#caracteristicas" class="hover:text-orange-600 transition">Características</a>
+                <a href="#capturas" class="hover:text-orange-600 transition">Galería</a>
                 <a href="#privacidad" class="hover:text-orange-600 transition">Política de Privacidad</a>
+                <a href="#contacto" class="hover:text-orange-600 transition">Contacto</a>
             </nav>
             <div>
-                <a href="#apps" class="bg-orange-600 hover:bg-orange-700 text-white px-5 py-2.5 rounded-xl text-sm font-semibold shadow-sm transition">Ver en App Store</a>
+                <a href="#descarga" class="bg-orange-600 hover:bg-orange-700 text-white px-5 py-2.5 rounded-xl text-sm font-semibold shadow-sm transition inline-flex items-center gap-2">
+                    <i class="fa-brands fa-app-store-ios text-base"></i> Ver en App Store
+                </a>
             </div>
         </div>
     </header>
 
     <!-- Hero Section -->
     <section class="py-20 bg-gradient-to-b from-white to-slate-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <span class="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-full text-xs font-semibold bg-orange-100 text-orange-800 mb-6">
-                <i class="fa-solid fa-apple"></i> Disponibles para Mac, iPad e iPhone
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <span class="inline-flex items-center gap-1.5 py-1.5 px-3.5 rounded-full text-xs font-semibold bg-orange-100 text-orange-800 mb-6">
+                <i class="fa-solid fa-apple"></i> Disponible para Mac, iPad e iPhone
             </span>
+            
+            <div class="flex justify-center mb-6">
+                <img src="Logo.jpg" alt="Logo Recetas" class="w-28 h-28 rounded-3xl shadow-xl object-cover border-4 border-white">
+            </div>
+
             <h1 class="text-4xl sm:text-6xl font-extrabold text-slate-900 tracking-tight mb-6">
-                Control total para tu negocio de hostelería
+                Recetas Pro & Escandallos
             </h1>
-            <p class="text-lg sm:text-xl text-slate-600 max-w-2xl mx-auto mb-10">
-                Herramientas profesionales de escandallos, costes, alérgenos y TPV diseñadas para funcionar de forma local, rápida y sin cuotas mensuales.
+            
+            <!-- Texto promocional (máx. 170 caracteres) -->
+            <p class="text-xl sm:text-2xl text-slate-700 font-medium max-w-3xl mx-auto mb-8 leading-relaxed">
+                Pon tus recetas y adáptalas a cada situación: para 10 raciones, para 5 kg o con lo que tienes en stock. Con coste, margen y lista de la compra al instante.
             </p>
-            <div class="flex flex-wrap justify-center gap-4">
-                <a href="#apps" class="bg-slate-900 hover:bg-slate-800 text-white font-medium px-8 py-4 rounded-2xl shadow-lg transition flex items-center gap-3">
-                    <i class="fa-solid fa-store text-xl"></i> Descubrir Aplicaciones
-                </a>
-                <a href="#privacidad" class="bg-white border border-slate-300 hover:bg-slate-50 text-slate-700 font-medium px-8 py-4 rounded-2xl transition">
-                    Política de Privacidad
+
+            <div class="bg-amber-50 border border-amber-200 rounded-2xl p-4 max-w-2xl mx-auto mb-10 text-amber-900 text-sm font-semibold">
+                <i class="fa-solid fa-circle-info text-amber-600 mr-1.5"></i> No trae recetas hechas: tú pones las tuyas y la app las adapta a cada situación.
+            </div>
+
+            <div class="flex flex-wrap justify-center gap-4" id="descarga">
+                <a href="#" class="bg-slate-900 hover:bg-slate-800 text-white font-medium px-8 py-4 rounded-2xl shadow-lg transition flex items-center gap-3">
+                    <i class="fa-brands fa-apple text-2xl"></i>
+                    <div class="text-left">
+                        <div class="text-xs text-slate-300 uppercase tracking-wider">Consíguela en la</div>
+                        <div class="text-lg font-bold leading-none">App Store (9,99 €)</div>
+                    </div>
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- Apps Section -->
-    <section id="apps" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Características de la App -->
+    <section id="caracteristicas" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
-            <h2 class="text-3xl font-bold text-slate-900">Nuestras Aplicaciones</h2>
-            <p class="text-slate-600 mt-2">Diseñadas específicamente para el sector de la hostelería</p>
+            <h2 class="text-3xl sm:text-4xl font-bold text-slate-900">Todo lo que necesitas en cocina</h2>
+            <p class="text-slate-600 mt-3 text-lg">Una receta nunca se cocina igual dos días: hoy son 10 raciones, mañana 5 kilos, y el viernes solo tienes la harina que tienes.</p>
         </div>
 
-        <div class="grid md:grid-cols-2 gap-10">
-            <!-- Recetas App -->
-            <div class="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm flex flex-col justify-between">
-                <div>
-                    <div class="flex items-center gap-4 mb-6">
-                        <img src="Logo.jpg" alt="Logo Recetas" class="w-16 h-16 rounded-2xl object-cover shadow-md bg-slate-100">
-                        <div>
-                            <h3 class="text-2xl font-bold text-slate-900">Recetas</h3>
-                            <span class="text-sm font-semibold text-orange-600">Gestión Gastronómica y Costes</span>
-                        </div>
-                    </div>
-                    <p class="text-slate-600 mb-6">
-                        Crea recetas profesionales añadiendo ingredientes con control de alérgenos, costes y mermas. Permite realizar un escalado flexible por kilos, por persona (con gramos exactos) o seleccionando el ingrediente que menos tenga para que los demás se adapten automáticamente.
-                    </p>
-                    <ul class="space-y-3 text-sm text-slate-700 mb-8">
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-orange-600"></i> Control detallado de alérgenos, costes y mermas</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-orange-600"></i> Escalado por kilos o por raciones (gramos por persona)</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-orange-600"></i> Escalado por ingrediente limitante (adaptación automática)</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-orange-600"></i> Importación directa de ingredientes con TPV+</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-orange-600"></i> Copias de seguridad y datos 100% locales</li>
-                    </ul>
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Bloque 1 -->
+            <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm hover:shadow-md transition">
+                <div class="w-12 h-12 bg-orange-100 text-orange-600 rounded-2xl flex items-center justify-center text-xl mb-6">
+                    <i class="fa-solid fa-calculator"></i>
                 </div>
-                <div class="pt-6 border-t border-slate-100 flex items-center justify-between">
-                    <div>
-                        <span class="text-xs text-slate-400 block">Precio Lanzamiento</span>
-                        <span class="text-2xl font-bold text-slate-900">9,99 €</span>
-                    </div>
-                    <a href="#" class="bg-orange-600 hover:bg-orange-700 text-white px-6 py-3 rounded-xl font-medium text-sm transition flex items-center gap-2">
-                        <i class="fa-brands fa-app-store"></i> App Store
-                    </a>
-                </div>
+                <h3 class="text-xl font-bold text-slate-900 mb-4">Adapta la Receta a lo que Necesitas</h3>
+                <ul class="space-y-2.5 text-sm text-slate-600">
+                    <li class="flex items-start gap-2"><i class="fa-solid fa-check text-orange-600 mt-1"></i> Por kilos totales</li>
+                    <li class="flex items-start gap-2"><i class="fa-solid fa-check text-orange-600 mt-1"></i> Por número de raciones</li>
+                    <li class="flex items-start gap-2"><i class="fa-solid fa-check text-orange-600 mt-1"></i> Multiplicando (×2, ×0,5…)</li>
+                    <li class="flex items-start gap-2"><i class="fa-solid fa-check text-orange-600 mt-1"></i> Por presupuesto disponible</li>
+                    <li class="flex items-start gap-2"><i class="fa-solid fa-check text-orange-600 mt-1"></i> Con el stock que tienes</li>
+                    <li class="flex items-start gap-2"><i class="fa-solid fa-check text-orange-600 mt-1"></i> Según el ingrediente que te falta o sobra</li>
+                </ul>
             </div>
 
-            <!-- TPV+ App -->
-            <div class="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm flex flex-col justify-between">
-                <div>
-                    <div class="flex items-center gap-4 mb-6">
-                        <img src="Logo%20TPV.jpg" alt="Logo TPV+" class="w-16 h-16 rounded-2xl object-cover shadow-md bg-slate-100">
-                        <div>
-                            <h3 class="text-2xl font-bold text-slate-900">TPV+</h3>
-                            <span class="text-sm font-semibold text-blue-600">Terminal Punto de Venta</span>
-                        </div>
-                    </div>
-                    <p class="text-slate-600 mb-6">
-                        Ideal para locales de hostelería (churrerías, pollerías, cafeterías). Permite vender, cobrar, controlar stock en tiempo real y realizar el cierre de caja diario de forma rápida y sencilla.
-                    </p>
-                    <ul class="space-y-3 text-sm text-slate-700 mb-8">
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-600"></i> Control de stock y alertas de mínimo</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-600"></i> Cierre de caja diario y control de efectivo/tarjeta</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-600"></i> Módulo integrado de recetas y escandallos</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-600"></i> Universal: Mac, iPad e iPhone</li>
-                    </ul>
+            <!-- Bloque 2 -->
+            <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm hover:shadow-md transition">
+                <div class="w-12 h-12 bg-amber-100 text-amber-600 rounded-2xl flex items-center justify-center text-xl mb-6">
+                    <i class="fa-solid fa-chart-pie"></i>
                 </div>
-                <div class="pt-6 border-t border-slate-100 flex items-center justify-between">
-                    <div>
-                        <span class="text-xs text-slate-400 block">Precio Lanzamiento</span>
-                        <span class="text-2xl font-bold text-slate-900">29,99 €</span>
+                <h3 class="text-xl font-bold text-slate-900 mb-4">Escandallos y Costes</h3>
+                <ul class="space-y-2.5 text-sm text-slate-600">
+                    <li class="flex items-start gap-2"><i class="fa-solid fa-check text-amber-600 mt-1"></i> Coste por ración y total con mermas</li>
+                    <li class="flex items-start gap-2"><i class="fa-solid fa-check text-amber-600 mt-1"></i> Costes extra: envase, mano de obra y gas</li>
+                    <li class="flex items-start gap-2"><i class="fa-solid fa-check text-amber-600 mt-1"></i> Configuración de IVA (4%, 10%, 21%) o IGIC</li>
+                    <li class="flex items-start gap-2"><i class="fa-solid fa-check text-amber-600 mt-1"></i> Margen real y precio de venta sugerido</li>
+                    <li class="flex items-start gap-2"><i class="fa-solid fa-check text-amber-600 mt-1"></i> Comparación con la competencia</li>
+                    <li class="flex items-start gap-2"><i class="fa-solid fa-check text-amber-600 mt-1"></i> Alertas de subida de precio y margen bajo</li>
+                </ul>
+            </div>
+
+            <!-- Bloque 3 -->
+            <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm hover:shadow-md transition">
+                <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center text-xl mb-6">
+                    <i class="fa-solid fa-folder-tree"></i>
+                </div>
+                <h3 class="text-xl font-bold text-slate-900 mb-4">Organizado para Trabajar</h3>
+                <ul class="space-y-2.5 text-sm text-slate-600">
+                    <li class="flex items-start gap-2"><i class="fa-solid fa-check text-blue-600 mt-1"></i> Subrecetas (masa dentro de otra receta)</li>
+                    <li class="flex items-start gap-2"><i class="fa-solid fa-check text-blue-600 mt-1"></i> Categorías de colores</li>
+                    <li class="flex items-start gap-2"><i class="fa-solid fa-check text-blue-600 mt-1"></i> Los 14 alérgenos oficiales UE + personalizados</li>
+                    <li class="flex items-start gap-2"><i class="fa-solid fa-check text-blue-600 mt-1"></i> Exportación de ficha técnica en PDF</li>
+                    <li class="flex items-start gap-2"><i class="fa-solid fa-check text-blue-600 mt-1"></i> Importación de ingredientes desde CSV</li>
+                    <li class="flex items-start gap-2"><i class="fa-solid fa-check text-blue-600 mt-1"></i> Copias de seguridad en archivo</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Capturas de Pantalla -->
+    <section id="capturas" class="py-20 bg-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-slate-900">Interfaz Nativa</h2>
+                <p class="text-slate-600 mt-2">Diseñada específicamente para trabajar con fluidez en macOS, iPadOS e iOS</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200">
+                    <img src="Recetas.png" alt="Gestión de Recetas" class="w-full h-64 object-cover bg-slate-50">
+                    <div class="p-6">
+                        <h4 class="font-bold text-slate-900 mb-1">Listado de Recetas y Costes</h4>
+                        <p class="text-sm text-slate-600">Visualiza rápidamente precios de coste, venta y márgenes de beneficio.</p>
                     </div>
-                    <a href="#" class="bg-blue-600 hover
+                </div>
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200">
+                    <img src="Dashboard.png" alt="Dashboard" class="w-full h-64 object-cover bg-slate-50">
+                    <div class="p-6">
+                        <h4 class="font-bold text-slate-900 mb-1">Panel General</h4>
+                        <p class="text-sm text-slate-600">Acceso a métricas de ingrediente, alertas y gestión integral.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Política de Privacidad -->
+    <section id="privacidad" class="py-20 bg-white border-t border-slate-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-slate-900">Política de Privacidad</h2>
+                <p class="text-slate-500 mt-2">Última actualización: Octubre de 2026</p>
+            </div>
+            
+            <div class="prose prose-slate max-w-none space-y-6 text-slate-700">
+                <div class="bg-orange-50 border-l-4 border-orange-500 p-5 rounded-r-xl mb-8">
+                    <p class="font-bold text-orange-950 m-0 text-base">
+                        TUS DATOS SON TUYOS: La aplicación "Recetas" opera exclusivamente de forma local en tu dispositivo. No recopilamos, almacenamos ni procesamos ningún tipo de dato personal de usuario en servidores remotos o en la nube.
+                    </p>
+                </div>
+
+                <h3 class="text-xl font-bold text-slate-900">1. Responsable del Tratamiento</h3>
+                <p>El responsable del desarrollo y gestión de la aplicación <strong>Recetas</strong> es <strong>Rubén Morales Martín</strong> (Contacto: <code>6escandallos@gmail.com</code>). Toda la información generada se guarda localmente en el dispositivo del usuario mediante almacenamiento local nativo.</p>
+
+                <h3 class="text-xl font-bold text-slate-900">2. Datos que NO Recopilamos</h3>
+                <ul class="list-disc pl-6 space-y-2">
+                    <li><strong>Sin Cuentas de Usuario:</strong> No se requiere registro, creación de perfiles ni inicio de sesión.</li>
+                    <li><strong>Sin Servidores ni Nube:</strong> Toda la información de recetas, precios, ingredientes y márgenes reside de forma estricta en tu Mac, iPad o iPhone.</li>
+                    <li><strong>Sin Rastreo ni Publicidad:</strong> No utilizamos SDKs de análisis de uso de terceros, ni redes publicitarias.</li>
+                </ul>
+
+                <h3 class="text-xl font-bold text-slate-900">3. Copias de Seguridad</h3>
+                <p>Las copias de seguridad de tus datos se crean mediante archivos locales exportables directamente por el usuario, bajo su propio control y almacenamiento.</p>
+
+                <h3 class="text-xl font-bold text-slate-900">4. Contacto y Soporte Legal</h3>
+                <p>Para cualquier consulta respecto al funcionamiento de la app o sus términos, puedes escribir a: <a href="mailto:6escandallos@gmail.com" class="text-orange-600 font-semibold underline">6escandallos@gmail.com</a>.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto / Soporte -->
+    <section id="contacto" class="py-12 bg-slate-100 border-t border-slate-200 text-center">
+        <div class="max-w-4xl mx-auto px-4">
+            <h3 class="text-lg font-bold text-slate-900 mb-2">Soporte y Desarrollador</h3>
+            <p class="text-sm text-slate-600">Desarrollado por <strong>Rubén Morales Martín</strong></p>
+            <p class="text-sm text-orange-600 font-medium mt-1">
+                <i class="fa-regular fa-envelope"></i> <a href="mailto:6escandallos@gmail.com">6escandallos@gmail.com</a>
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+            <p class="text-sm">© 2026 Rubén Morales Martín. Todos los derechos reservados.</p>
+            <div class="flex space-x-6 text-sm">
+                <a href="#privacidad" class="hover:text-white transition">Política de Privacidad</a>
+                <a href="#caracteristicas" class="hover:text-white transition">Funcionalidades</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
