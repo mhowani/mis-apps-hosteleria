@@ -120,3 +120,7 @@ footer{border-top:1px solid var(--line);padding:36px 0;color:var(--muted);font-s
 footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px}
 footer a{text-decoration:none;margin-right:16px}
 footer a:hover{text-decoration:underline}
+
+.btn-soon{border-color:var(--line);background:var(--surface);color:var(--muted);cursor:default;opacity:.85}
+.btn-soon:hover{transform:none}
+.pill-soon{background:var(--line);color:var(--ink)}
