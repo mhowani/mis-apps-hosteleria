@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contacto · Sabor y Control</title>
+<meta name="description" content="Contacta con Sabor y Control: dudas, sugerencias, compras o soporte de las apps Recetas y TPV+ para hostelería.">
+<meta name="keywords" content="contacto Sabor y Control, contacto app recetas, contacto TPV hostelería, soporte, Sabor y Control">
+<meta name="author" content="Rubén Morales · Sabor y Control">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://mhowani.github.io/mis-apps-hosteleria/contacto.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Sabor y Control">
+<meta property="og:locale" content="es_ES">
+<meta property="og:title" content="Contacto · Sabor y Control">
+<meta property="og:description" content="Contacta con Sabor y Control: dudas, sugerencias, compras o soporte de las apps Recetas y TPV+ para hostelería.">
+<meta property="og:url" content="https://mhowani.github.io/mis-apps-hosteleria/contacto.html">
+<meta property="og:image" content="https://mhowani.github.io/mis-apps-hosteleria/assets/logo-recetas.jpg">
+<meta name="twitter:card" content="summary">
+<link rel="apple-touch-icon" href="assets/logo-recetas.jpg">
+<meta name="theme-color" content="#f97316">
+<link rel="icon" href="assets/logo-recetas.jpg">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="index.html"><span class="dots"><img src="assets/logo-recetas.jpg" alt=""><img src="assets/logo-tpv.jpg" alt=""></span><span>Sabor y Control</span></a>
+  <nav>
+    <a href="recetas.html">Recetas</a>
+    <a href="tpv.html">TPV+</a>
+    <a href="privacidad.html">Privacidad</a>
+    <a href="soporte.html">Soporte</a>
+    <a href="contacto.html" class="nav-contacto" aria-current="page">Contacto</a>
+  </nav>
+</div></header>
+
+<main>
+<section class="hero" style="padding-bottom:24px"><div class="wrap">
+  <span class="eyebrow">Contacto</span>
+  <h1 style="font-size:clamp(2rem,4.5vw,3rem)">Hablemos</h1>
+  <p class="lead">¿Tienes una duda, una sugerencia o quieres la versión completa? Rellena el formulario y te respondo lo antes posible a tu correo.</p>
+</div></section>
+
+<section style="padding-top:8px"><div class="wrap grid2" style="align-items:start">
+  <form id="form-contacto" class="form-contacto" novalidate>
+    <label for="nombre">Nombre</label>
+    <input id="nombre" name="nombre" type="text" autocomplete="name" required>
+
+    <label for="email">Tu correo electrónico</label>
+    <input id="email" name="email" type="email" autocomplete="email" required>
+
+    <label for="app">¿Sobre qué app?</label>
+    <select id="app" name="app">
+      <option>Recetas</option>
+      <option>TPV+</option>
+      <option>Las dos</option>
+      <option>Otra cosa</option>
+    </select>
+
+    <label for="motivo">Motivo</label>
+    <select id="motivo" name="motivo">
+      <option>Duda sobre la app</option>
+      <option>Problema o error</option>
+      <option>Sugerencia</option>
+      <option>Compra / versión completa</option>
+      <option>Otro</option>
+    </select>
+
+    <label for="mensaje">Mensaje</label>
+    <textarea id="mensaje" name="mensaje" rows="6" required placeholder="Cuéntame qué necesitas. Si es un problema, dime en qué dispositivo (Mac, iPad, iPhone, Android, Windows o navegador)."></textarea>
+
+    <!-- Trampa antispam: las personas no la ven -->
+    <input type="text" name="_honey" class="oculto" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+    <label class="check"><input type="checkbox" id="acepto" required>
+      <span>He leído la <a class="link-r" href="privacidad.html#contacto">política de privacidad</a> y acepto que se use mi correo para responderme.</span></label>
+
+    <button type="submit" class="btn btn-rec" id="enviar">✉️ Enviar mensaje</button>
+    <p id="aviso" class="aviso" role="status" aria-live="polite"></p>
+  </form>
+
+  <div>
+    <div class="card"><div class="icon rec-i">✉️</div><h3>¿Prefieres el correo?</h3>
+      <p>Escríbeme directamente a <a class="link-r" href="mailto:recetasycontrol@gmail.com">recetasycontrol@gmail.com</a>.</p></div>
+    <div class="card" style="margin-top:18px"><div class="icon tpv-i">💡</div><h3>Respuestas rápidas</h3>
+      <p>Muchas dudas ya están resueltas en <a class="link" href="soporte.html">Soporte</a>: copias de seguridad, versión gratuita, impresoras y más.</p></div>
+  </div>
+</div></section>
+</main>
+<footer><div class="wrap">
+  <div>© 2026 Sabor y Control. Todos los derechos reservados.</div>
+  <div><a href="recetas.html">Recetas</a><a href="tpv.html">TPV+</a><a href="privacidad.html">Política de privacidad</a><a href="soporte.html">Soporte</a><a href="contacto.html">Contacto</a><a href="mailto:recetasycontrol@gmail.com">recetasycontrol@gmail.com</a></div>
+</div></footer>
+
+<script>
+(function () {
+  // Los mensajes se envían a recetasycontrol@gmail.com a través de FormSubmit (formsubmit.co).
+  var DESTINO = 'https://formsubmit.co/ajax/recetasycontrol@gmail.com';
+  var form = document.getElementById('form-contacto');
+  var aviso = document.getElementById('aviso');
+  var boton = document.getElementById('enviar');
+  function mostrar(texto, tipo) { aviso.textContent = texto; aviso.className = 'aviso ' + tipo; }
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    if (!form.checkValidity()) { mostrar('Rellena tu nombre, un correo válido, el mensaje y marca la casilla de privacidad.', 'error'); form.reportValidity(); return; }
+    var d = new FormData(form);
+    if (d.get('_honey')) return;
+    var datos = {
+      nombre: d.get('nombre'), email: d.get('email'), app: d.get('app'), motivo: d.get('motivo'), mensaje: d.get('mensaje'),
+      _subject: 'Web Sabor y Control · ' + d.get('motivo') + ' (' + d.get('app') + ')',
+      _replyto: d.get('email'), _template: 'table', _captcha: 'false'
+    };
+    boton.disabled = true; boton.textContent = 'Enviando…'; mostrar('', '');
+    fetch(DESTINO, { method: 'POST', headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }, body: JSON.stringify(datos) })
+      .then(function (r) { return r.json().then(function (j) { if (!r.ok || String(j.success) !== 'true') throw new Error(); }); })
+      .then(function () { form.reset(); mostrar('¡Gracias! Tu mensaje se ha enviado. Te responderé lo antes posible.', 'ok'); })
+      .catch(function () { mostrar('No se ha podido enviar. Inténtalo de nuevo o escribe a recetasycontrol@gmail.com', 'error'); })
+      .then(function () { boton.disabled = false; boton.textContent = '✉️ Enviar mensaje'; });
+  });
+})();
+</script>
+</body>
+</html>
