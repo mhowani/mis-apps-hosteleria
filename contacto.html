@@ -92,8 +92,8 @@
 
 <script>
 (function () {
-  // Los mensajes se envían a recetasycontrol@gmail.com a través de FormSubmit (formsubmit.co).
-  var DESTINO = 'https://formsubmit.co/ajax/recetasycontrol@gmail.com';
+  // Los mensajes se envían a saborycontrol2026@outlook.es a través de FormSubmit (formsubmit.co).
+  var DESTINO = 'https://formsubmit.co/ajax/saborycontrol2026@outlook.es';
   var form = document.getElementById('form-contacto');
   var aviso = document.getElementById('aviso');
   var boton = document.getElementById('enviar');
@@ -118,7 +118,7 @@
     fetch(DESTINO, { method: 'POST', headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }, body: JSON.stringify(datos) })
       .then(function (r) { return r.json().then(function (j) { if (!r.ok || String(j.success) !== 'true') throw new Error(); }); })
       .then(function () { form.reset(); mostrar('¡Gracias! Tu mensaje se ha enviado. Te responderé lo antes posible.', 'ok'); })
-      .catch(function () { mostrar('No se ha podido enviar. Inténtalo de nuevo o escribe a recetasycontrol@gmail.com', 'error'); })
+      .catch(function () { mostrar('No se ha podido enviar. Inténtalo de nuevo o escribe a saborycontrol2026@outlook.es', 'error'); })
       .then(function () { boton.disabled = false; boton.textContent = '✉️ Enviar mensaje'; });
   });
 })();
