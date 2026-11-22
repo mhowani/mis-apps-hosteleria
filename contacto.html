@@ -80,16 +80,14 @@
   </form>
 
   <div>
-    <div class="card"><div class="icon rec-i">✉️</div><h3>¿Prefieres el correo?</h3>
-      <p>Escríbeme directamente a <a class="link-r" href="mailto:recetasycontrol@gmail.com">recetasycontrol@gmail.com</a>.</p></div>
-    <div class="card" style="margin-top:18px"><div class="icon tpv-i">💡</div><h3>Respuestas rápidas</h3>
+    <div class="card"><div class="icon tpv-i">💡</div><h3>Respuestas rápidas</h3>
       <p>Muchas dudas ya están resueltas en <a class="link" href="soporte.html">Soporte</a>: copias de seguridad, versión gratuita, impresoras y más.</p></div>
   </div>
 </div></section>
 </main>
 <footer><div class="wrap">
   <div>© 2026 Sabor y Control. Todos los derechos reservados.</div>
-  <div><a href="recetas.html">Recetas</a><a href="tpv.html">TPV+</a><a href="privacidad.html">Política de privacidad</a><a href="soporte.html">Soporte</a><a href="contacto.html">Contacto</a><a href="mailto:recetasycontrol@gmail.com">recetasycontrol@gmail.com</a></div>
+  <div><a href="recetas.html">Recetas</a><a href="tpv.html">TPV+</a><a href="privacidad.html">Política de privacidad</a><a href="soporte.html">Soporte</a><a href="contacto.html">Contacto</a></div>
 </div></footer>
 
 <script>
@@ -99,6 +97,12 @@
   var form = document.getElementById('form-contacto');
   var aviso = document.getElementById('aviso');
   var boton = document.getElementById('enviar');
+  // Si se llega desde Soporte (contacto.html?app=Recetas), se deja elegida esa app.
+  var appElegida = new URLSearchParams(location.search).get('app');
+  if (appElegida) {
+    var lista = document.getElementById('app');
+    for (var i = 0; i < lista.options.length; i++) if (lista.options[i].text === appElegida) lista.selectedIndex = i;
+  }
   function mostrar(texto, tipo) { aviso.textContent = texto; aviso.className = 'aviso ' + tipo; }
   form.addEventListener('submit', function (e) {
     e.preventDefault();
